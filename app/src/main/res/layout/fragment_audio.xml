@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        style="@style/CardSection"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_section_sound"
+                android:tint="@color/primary"
+                android:contentDescription="@null"/>
+
+            <TextView
+                style="@style/SectionTitle.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="@string/section_sound_position"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleSoundPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSoundAll"
+                style="@style/ToggleButton.Large"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:text="@string/sound_pos_all"
+                app:strokeColor="@color/divider"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSoundFront"
+                style="@style/ToggleButton.Large"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:text="@string/sound_pos_front"
+                app:strokeColor="@color/divider"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSoundRear"
+                style="@style/ToggleButton.Large"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:text="@string/sound_pos_rear"
+                app:strokeColor="@color/divider"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSoundDriver"
+                style="@style/ToggleButton.Large"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:text="@string/sound_pos_driver"
+                app:strokeColor="@color/divider"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSoundSurround"
+                style="@style/ToggleButton.Large"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:text="@string/sound_pos_surround"
+                app:strokeColor="@color/divider"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/CardSection"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/SectionTitle.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="@string/section_loudspeaker"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLoudspeaker"
+                style="@style/ControlButton.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:text="@string/btn_loudspeaker"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_gain"
+                android:textSize="16sp"
+                android:textColor="@color/on_surface_medium"
+                android:layout_marginEnd="16dp"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderLoudspeakerGain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:valueFrom="100"
+                android:valueTo="300"
+                android:stepSize="10"
+                app:trackHeight="10dp"
+                app:thumbRadius="16dp"/>
+
+            <TextView
+                android:id="@+id/textGainValue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:gravity="end"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/CardSection"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/SectionTitle.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:text="@string/section_sounds"/>
+        </LinearLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/soundButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:alignItems="flex_start"
+            app:justifyContent="flex_start"/>
+    </LinearLayout>
+</LinearLayout>

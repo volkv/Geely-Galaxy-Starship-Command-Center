@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="background">#0A0C11</color>
+    <color name="surface">#11141B</color>
+    <color name="surface_elevated">#171C26</color>
+    <color name="card_background">#141922</color>
+
+    <!-- Primary - electric cyan -->
+    <color name="primary">#4DCFE0</color>
+    <color name="primary_dark">#23A6BC</color>
+    <color name="primary_light">#7BE2EF</color>
+    <color name="on_primary">@color/on_bright</color>
+
+    <!-- Accent - warm amber -->
+    <color name="accent">#FFB24A</color>
+    <color name="accent_dark">#E18E2F</color>
+    <color name="on_accent">#1B1205</color>
+
+    <!-- Status colors -->
+    <color name="success">#3DDC97</color>
+    <color name="warning">#F0B429</color>
+    <color name="error">#F36C6C</color>
+
+    <!-- Text colors -->
+    <color name="on_surface">#E7EEF7</color>
+    <color name="on_surface_medium">#A3AFBF</color>
+    <color name="on_surface_dim">#647184</color>
+    <color name="on_bright">#0B1116</color>
+
+    <!-- Divider and effects -->
+    <color name="divider">#2A3340</color>
+    <color name="ripple">#33FFFFFF</color>
+
+    <!-- Button colors -->
+    <color name="button_primary">#2ED16A</color>
+    <color name="button_primary_pressed">#3AE47A</color>
+    <color name="button_secondary">#1C232D</color>
+    <color name="button_secondary_pressed">#2A3440</color>
+    <color name="button_danger">#E55353</color>
+    <color name="button_special">#FFB24A</color>
+
+    <!-- Highlight colors -->
+    <color name="cosmic_purple">#4DCFE0</color>
+    <color name="cosmic_cyan">#4DCFE0</color>
+    <color name="starship_gold">#FFB24A</color>
+    <color name="nebula_pink">#FF7AA5</color>
+
+    <!-- Header gradient colors -->
+    <color name="header_start">#18202E</color>
+    <color name="header_end">#0E1218</color>
+
+    <!-- Status indicator colors -->
+    <color name="status_battery">#3DDC97</color>
+    <color name="status_fuel">#F0B429</color>
+    <color name="status_range">#4DCFE0</color>
+    <color name="status_maintenance">#A3AFBF</color>
+
+    <!-- Icon tint -->
+    <color name="icon_tint">#B8C6D8</color>
+</resources>

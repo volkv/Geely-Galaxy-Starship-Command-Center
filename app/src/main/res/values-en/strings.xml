@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Command Center</string>
+    <string name="app_title">Geely Galaxy Starship Command Center</string>
+
+    <string name="header_service">Service</string>
+    <string name="btn_restart_service">Service</string>
+    <string name="btn_engineering">Engineering</string>
+    <string name="btn_screen_clean">Clean</string>
+
+    <string name="status_battery">BATTERY</string>
+    <string name="status_fuel">FUEL</string>
+    <string name="status_range">RANGE</string>
+    <string name="status_maintenance">MAINTENANCE</string>
+
+    <string name="stat_battery">BATTERY</string>
+    <string name="stat_fuel">FUEL</string>
+    <string name="stat_range">RANGE</string>
+    <string name="stat_odometer">ODOMETER</string>
+    <string name="stat_maintenance">SERVICE</string>
+    <string name="stat_charging">CHARGING</string>
+
+    <string name="section_drive_mode">Drive Mode</string>
+    <string name="drive_mode_range_ext">Range Ext</string>
+    <string name="drive_mode_sport">Sport</string>
+    <string name="drive_mode_ev">EV</string>
+    <string name="drive_mode_intelligent">Intelligent</string>
+
+    <string name="section_lights">Headlights</string>
+    <string name="lights_off">Off</string>
+    <string name="lights_parking">Parking</string>
+    <string name="lights_headlights">Low Beam</string>
+    <string name="lbl_fog_lights">Rear Fog Lights</string>
+
+    <string name="section_seats">Seats</string>
+    <string name="lbl_driver">Driver</string>
+    <string name="lbl_passenger">Passenger</string>
+    <string name="lbl_massage">Massage</string>
+    <string name="lbl_heating">Heating</string>
+
+    <string name="section_ambient">Ambient Light</string>
+    <string name="ambient_brightness">Brightness</string>
+    <string name="ambient_breathing">Breathing</string>
+    <string name="ambient_flow">Flow</string>
+    <string name="ambient_amethyst">Amethyst</string>
+    <string name="ambient_turquoise">Turquoise</string>
+    <string name="ambient_coral">Coral</string>
+    <string name="ambient_sunset">Sunset</string>
+    <string name="ambient_radiance">Radiance</string>
+    <string name="ambient_dawn">Dawn</string>
+
+    <string name="section_windows">Windows</string>
+    <string name="window_front_left">Front L.</string>
+    <string name="window_front_right">Front R.</string>
+    <string name="window_rear_left">Rear L.</string>
+    <string name="window_rear_right">Rear R.</string>
+
+    <string name="section_trunk">Trunk</string>
+    <string name="btn_open">Open</string>
+    <string name="btn_close">Close</string>
+
+    <string name="section_mirrors">Mirrors</string>
+    <string name="btn_mirror_fold">Fold</string>
+    <string name="btn_mirror_unfold">Unfold</string>
+
+    <string name="section_battery">Battery</string>
+    <string name="lbl_battery_mode">Battery Hold Mode</string>
+    <string name="lbl_parking_charge">Hold Charge While Parked</string>
+
+    <string name="section_hud">Head-Up Display</string>
+    <string name="lbl_hud">HUD</string>
+    <string name="lbl_wireless_charging">Wireless Charging</string>
+
+    <string name="section_interior_light">Interior Lights</string>
+    <string name="light_fl">FL</string>
+    <string name="light_fr">FR</string>
+    <string name="light_rl">RL</string>
+    <string name="light_rr">RR</string>
+    <string name="light_all">ALL</string>
+
+    <string name="section_sounds">Sounds</string>
+    <string name="audio_seat_optimize">Sound Position</string>
+    <string name="audio_optimize_all">All Seats</string>
+    <string name="audio_optimize_front">Front</string>
+    <string name="audio_optimize_rear">Rear</string>
+    <string name="audio_optimize_driver">Driver</string>
+    <string name="audio_surround_mode">Surround</string>
+    <string name="btn_loudspeaker">Loudspeaker</string>
+    <string name="loudspeaker_on">Loudspeaker (ON)</string>
+
+    <string name="toast_screen_clean_unavailable">Screen clean unavailable</string>
+    <string name="toast_launching_package">Launching %s...</string>
+    <string name="toast_engineering_not_found">Engineering menu not found</string>
+    <string name="toast_service_restarting">Service restarting...</string>
+    <string name="toast_error_format">Error: %s</string>
+    <string name="toast_loudspeaker_error">Loudspeaker start error</string>
+
+    <string name="charging_format">Charging: %s %s</string>
+    <string name="energy_format">Drive %s | Climate %s | Battery %s | Other %s</string>
+
+    <string name="massage_type_0">Activation (full body)</string>
+    <string name="massage_type_1">Relaxation (full body)</string>
+    <string name="massage_type_2">Shoulders and back (gentle)</string>
+    <string name="massage_type_3">Lower back and back</string>
+    <string name="massage_type_4">Lower back and buttocks</string>
+    <string name="massage_type_5">Shoulders and back (active)</string>
+    <string name="massage_type_6">Lower back (stretch)</string>
+    <string name="massage_type_7">Buttocks (gentle)</string>
+
+    <string name="level_off">Off</string>
+    <string name="level_min">Min</string>
+    <string name="level_med">Med</string>
+    <string name="level_max">Max</string>
+
+    <string name="toast_action_error">Action failed</string>
+    <string name="toast_error_message">Error: %s</string>
+
+    <string name="section_ac">Air Conditioning</string>
+    <string name="ac_on">Turn On AC</string>
+    <string name="ac_off">Turn Off AC</string>
+
+    <string name="section_temp">Temperature</string>
+    <string name="section_fan">Fan</string>
+
+    <string name="section_massage">Seat Massage</string>
+    <string name="massage_driver_on">Driver ON</string>
+    <string name="massage_driver_off">Driver OFF</string>
+    <string name="massage_passenger_on">Passenger ON</string>
+    <string name="massage_passenger_off">Passenger OFF</string>
+
+    <string name="windows_open_all">Open All</string>
+    <string name="windows_close_all">Close All</string>
+    <string name="sunroof_open">Sunroof ↑</string>
+    <string name="sunroof_close">Sunroof ↓</string>
+
+    <string name="section_light">Interior Light</string>
+    <string name="light_on">Turn On</string>
+    <string name="light_off">Turn Off</string>
+
+    <string name="section_seat_heating">Seat Heating</string>
+    <string name="heating_driver_on">Driver ON</string>
+    <string name="heating_driver_off">Driver OFF</string>
+    <string name="heating_passenger_on">Passenger ON</string>
+    <string name="heating_passenger_off">Passenger OFF</string>
+
+    <string name="scan_properties">Scan All Properties</string>
+
+    <string name="section_language">System Language</string>
+    <string name="section_number_format">Number Format</string>
+    <string name="section_timezone">Time Zone</string>
+    <string name="section_engineering_menus">Engineering Menus</string>
+    <string name="section_android_settings">Android Settings</string>
+
+    <string name="btn_geely_engineering">Geely Engineering</string>
+    <string name="btn_car_service">Car Service</string>
+    <string name="btn_developer_options">Developer Options</string>
+    <string name="btn_language_settings">Language</string>
+    <string name="btn_regional_settings">Region</string>
+    <string name="btn_datetime_settings">Date &amp; Time</string>
+    <string name="btn_android_settings">Android Settings</string>
+    <string name="btn_system_settings">Settings</string>
+    <string name="btn_wifi_settings">Wi-Fi</string>
+    <string name="btn_bluetooth_settings">Bluetooth</string>
+    <string name="btn_display_settings">Display</string>
+    <string name="btn_sound_settings">Sound</string>
+    <string name="btn_apps_settings">Apps</string>
+    <string name="btn_storage_settings">Storage</string>
+    <string name="btn_security_settings">Security</string>
+    <string name="btn_input_method_settings">Input</string>
+
+    <string name="section_sound_position">Sound Position</string>
+    <string name="sound_pos_all">All</string>
+    <string name="sound_pos_driver">Driver</string>
+    <string name="sound_pos_front">Front</string>
+    <string name="sound_pos_rear">Rear</string>
+    <string name="sound_pos_surround">Surround</string>
+    <string name="section_loudspeaker">Loudspeaker</string>
+    <string name="lbl_gain">Gain</string>
+    <string name="section_interior_lights">Interior Lights</string>
+    <string name="light_front_left">Front Left</string>
+    <string name="light_front_right">Front Right</string>
+    <string name="light_rear_left">Rear Left</string>
+    <string name="light_rear_right">Rear Right</string>
+    <string name="section_color_music">Color Music</string>
+    <string name="lbl_color_music_enable">Enable Color Music</string>
+    <string name="section_service">Service</string>
+    <string name="lbl_service_status">Status:</string>
+    <string name="status_running">Running</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="section_actions">Actions</string>
+    <string name="btn_fold">Fold</string>
+    <string name="btn_unfold">Unfold</string>
+
+    <string name="nav_lights">Lights</string>
+    <string name="nav_audio">Audio</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_misc">Misc</string>
+    <string name="nav_settings">Settings</string>
+</resources>

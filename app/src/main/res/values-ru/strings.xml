@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Command Center</string>
+    <string name="app_title">Geely Galaxy Starship Command Center</string>
+
+    <string name="header_service">Сервис</string>
+    <string name="btn_restart_service">Сервис</string>
+    <string name="btn_engineering">Инженерка</string>
+    <string name="btn_screen_clean">Очистка</string>
+
+    <string name="status_battery">БАТАРЕЯ</string>
+    <string name="status_fuel">ТОПЛИВО</string>
+    <string name="status_range">ЗАПАС ХОДА</string>
+    <string name="status_maintenance">ДО ТО</string>
+
+    <string name="stat_battery">БАТАРЕЯ</string>
+    <string name="stat_fuel">ТОПЛИВО</string>
+    <string name="stat_range">ЗАПАС</string>
+    <string name="stat_odometer">ПРОБЕГ</string>
+    <string name="stat_maintenance">ДО ТО</string>
+    <string name="stat_charging">ЗАРЯДКА</string>
+
+    <string name="section_drive_mode">Режим вождения</string>
+    <string name="drive_mode_range_ext">Запас хода</string>
+    <string name="drive_mode_sport">Спорт</string>
+    <string name="drive_mode_ev">EV</string>
+    <string name="drive_mode_intelligent">Умный</string>
+
+    <string name="section_lights">Фары</string>
+    <string name="lights_off">Выкл</string>
+    <string name="lights_parking">Габариты</string>
+    <string name="lights_headlights">Ближний</string>
+    <string name="lbl_fog_lights">Задние ПТФ</string>
+
+    <string name="section_seats">Сиденья</string>
+    <string name="lbl_driver">Водитель</string>
+    <string name="lbl_passenger">Пассажир</string>
+    <string name="lbl_massage">Массаж</string>
+    <string name="lbl_heating">Подогрев</string>
+
+    <string name="section_ambient">Подсветка</string>
+    <string name="ambient_brightness">Яркость</string>
+    <string name="ambient_breathing">Дыхание</string>
+    <string name="ambient_flow">Перелив</string>
+    <string name="ambient_amethyst">Аметист</string>
+    <string name="ambient_turquoise">Бирюза</string>
+    <string name="ambient_coral">Коралл</string>
+    <string name="ambient_sunset">Закат</string>
+    <string name="ambient_radiance">Сияние</string>
+    <string name="ambient_dawn">Рассвет</string>
+
+    <string name="section_windows">Окна</string>
+    <string name="window_front_left">Передн. лев.</string>
+    <string name="window_front_right">Передн. прав.</string>
+    <string name="window_rear_left">Задн. лев.</string>
+    <string name="window_rear_right">Задн. прав.</string>
+
+    <string name="section_trunk">Багажник</string>
+    <string name="btn_open">Открыть</string>
+    <string name="btn_close">Закрыть</string>
+
+    <string name="section_mirrors">Зеркала</string>
+    <string name="btn_mirror_fold">Сложить</string>
+    <string name="btn_mirror_unfold">Разложить</string>
+
+    <string name="section_battery">Батарея</string>
+    <string name="lbl_battery_mode">Поддержание уровня батареи</string>
+    <string name="lbl_parking_charge">Поддержание на парковке</string>
+
+    <string name="section_hud">Проекция на стекло</string>
+    <string name="lbl_hud">HUD</string>
+    <string name="lbl_wireless_charging">Беспр. зарядка</string>
+
+    <string name="section_interior_light">Свет салона</string>
+    <string name="light_fl">ЛП</string>
+    <string name="light_fr">ПП</string>
+    <string name="light_rl">ЛЗ</string>
+    <string name="light_rr">ПЗ</string>
+    <string name="light_all">ВСЕ</string>
+
+    <string name="section_sounds">Звуки</string>
+    <string name="audio_seat_optimize">Позиция звука</string>
+    <string name="audio_optimize_all">Весь салон</string>
+    <string name="audio_optimize_front">Передние</string>
+    <string name="audio_optimize_rear">Задние</string>
+    <string name="audio_optimize_driver">Водитель</string>
+    <string name="audio_surround_mode">Surround</string>
+    <string name="btn_loudspeaker">Громкоговоритель</string>
+    <string name="loudspeaker_on">Громкоговоритель (ВКЛ)</string>
+
+    <string name="toast_screen_clean_unavailable">Очистка экрана недоступна</string>
+    <string name="toast_launching_package">Запуск %s...</string>
+    <string name="toast_engineering_not_found">Инженерное меню не найдено</string>
+    <string name="toast_service_restarting">Сервис перезапускается...</string>
+    <string name="toast_error_format">Ошибка: %s</string>
+    <string name="toast_loudspeaker_error">Ошибка запуска громкоговорителя</string>
+
+    <string name="charging_format">Зарядка: %s %s</string>
+    <string name="energy_format">Движ %s | Климат %s | Бат %s | Проч %s</string>
+
+    <string name="section_ac">Кондиционер</string>
+    <string name="ac_on">Включить AC</string>
+    <string name="ac_off">Выключить AC</string>
+
+    <string name="section_temp">Температура</string>
+    <string name="section_fan">Вентилятор</string>
+
+    <string name="section_massage">Массаж сидений</string>
+    <string name="massage_driver_on">Водитель ВКЛ</string>
+    <string name="massage_driver_off">Водитель ВЫКЛ</string>
+    <string name="massage_passenger_on">Пассажир ВКЛ</string>
+    <string name="massage_passenger_off">Пассажир ВЫКЛ</string>
+
+    <string name="windows_open_all">Открыть все</string>
+    <string name="windows_close_all">Закрыть все</string>
+    <string name="sunroof_open">Люк ↑</string>
+    <string name="sunroof_close">Люк ↓</string>
+
+    <string name="section_light">Внутренний свет</string>
+    <string name="light_on">Включить</string>
+    <string name="light_off">Выключить</string>
+
+    <string name="section_seat_heating">Подогрев сидений</string>
+    <string name="heating_driver_on">Водитель ВКЛ</string>
+    <string name="heating_driver_off">Водитель ВЫКЛ</string>
+    <string name="heating_passenger_on">Пассажир ВКЛ</string>
+    <string name="heating_passenger_off">Пассажир ВЫКЛ</string>
+
+    <string name="massage_type_0">Активация (все тело)</string>
+    <string name="massage_type_1">Расслабление (все тело)</string>
+    <string name="massage_type_2">Плечи и спина (мягко)</string>
+    <string name="massage_type_3">Поясница и спина</string>
+    <string name="massage_type_4">Поясница и ягодицы</string>
+    <string name="massage_type_5">Плечи и спина (активно)</string>
+    <string name="massage_type_6">Поясница (растяжка)</string>
+    <string name="massage_type_7">Ягодицы (мягко)</string>
+
+    <string name="level_off">Выкл</string>
+    <string name="level_min">Мин</string>
+    <string name="level_med">Сред</string>
+    <string name="level_max">Макс</string>
+
+    <string name="toast_action_error">Ошибка выполнения</string>
+    <string name="toast_error_message">Ошибка: %s</string>
+
+    <string name="scan_properties">Сканировать все Properties</string>
+
+    <string name="section_language">Язык системы</string>
+    <string name="section_number_format">Формат чисел</string>
+    <string name="section_timezone">Часовой пояс</string>
+    <string name="section_engineering_menus">Инженерные меню</string>
+    <string name="section_android_settings">Настройки Android</string>
+
+    <string name="btn_geely_engineering">Geely Инженерка</string>
+    <string name="btn_car_service">Сервис авто</string>
+    <string name="btn_developer_options">Для разработчиков</string>
+    <string name="btn_language_settings">Язык</string>
+    <string name="btn_regional_settings">Регион</string>
+    <string name="btn_datetime_settings">Дата и время</string>
+    <string name="btn_android_settings">Настройки Android</string>
+    <string name="btn_system_settings">Настройки</string>
+    <string name="btn_wifi_settings">Wi-Fi</string>
+    <string name="btn_bluetooth_settings">Bluetooth</string>
+    <string name="btn_display_settings">Дисплей</string>
+    <string name="btn_sound_settings">Звук</string>
+    <string name="btn_apps_settings">Приложения</string>
+    <string name="btn_storage_settings">Хранилище</string>
+    <string name="btn_security_settings">Безопасность</string>
+    <string name="btn_input_method_settings">Ввод</string>
+
+    <string name="section_sound_position">Позиция звука</string>
+    <string name="sound_pos_all">Весь салон</string>
+    <string name="sound_pos_driver">Водитель</string>
+    <string name="sound_pos_front">Передние</string>
+    <string name="sound_pos_rear">Задние</string>
+    <string name="sound_pos_surround">Surround</string>
+    <string name="section_loudspeaker">Громкоговоритель</string>
+    <string name="lbl_gain">Усиление</string>
+    <string name="section_interior_lights">Свет салона</string>
+    <string name="light_front_left">Перед. лев.</string>
+    <string name="light_front_right">Перед. прав.</string>
+    <string name="light_rear_left">Задн. лев.</string>
+    <string name="light_rear_right">Задн. прав.</string>
+    <string name="section_color_music">Цветомузыка</string>
+    <string name="lbl_color_music_enable">Включить цветомузыку</string>
+    <string name="section_service">Сервис</string>
+    <string name="lbl_service_status">Статус:</string>
+    <string name="status_running">Работает</string>
+    <string name="status_stopped">Остановлен</string>
+    <string name="section_actions">Действия</string>
+    <string name="btn_fold">Сложить</string>
+    <string name="btn_unfold">Разложить</string>
+
+    <string name="nav_lights">Свет</string>
+    <string name="nav_audio">Звук</string>
+    <string name="nav_home">Главная</string>
+    <string name="nav_misc">Разное</string>
+    <string name="nav_settings">Настройки</string>
+</resources>

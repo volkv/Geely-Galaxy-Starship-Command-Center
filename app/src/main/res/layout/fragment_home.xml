@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/headerStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            style="@style/CardSection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_battery"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+
+            <TextView
+                android:id="@+id/textBatteryPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"/>
+
+            <TextView
+                android:id="@+id/textBatteryRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CardSection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_fuel"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+
+            <TextView
+                android:id="@+id/textFuelPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/cosmic_purple"/>
+
+            <TextView
+                android:id="@+id/textRangeFuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CardSection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_range"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+
+            <TextView
+                android:id="@+id/textRangeTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent"/>
+
+            <TextView
+                android:id="@+id/textRangeBreakdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CardSection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_odometer"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+
+            <TextView
+                android:id="@+id/textMileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/on_surface"/>
+
+            <TextView
+                android:id="@+id/textMileageBreakdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/CardSection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_maintenance"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+
+            <TextView
+                android:id="@+id/textMaintenanceMileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/on_surface"/>
+
+            <TextView
+                android:id="@+id/textMaintenanceTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardCharging"
+            style="@style/CardSection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_charging"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+
+            <TextView
+                android:id="@+id/textChargingPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"/>
+
+            <TextView
+                android:id="@+id/textChargingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="11sp"
+                android:textColor="@color/on_surface_dim"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/CardSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_section_seats"
+                        android:tint="@color/primary"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        style="@style/SectionTitle.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/section_seats"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_driver"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="12dp"
+                            android:textColor="@color/primary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_massage"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="@color/on_surface_dim"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/card_background"
+                            android:paddingHorizontal="12dp">
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switchMassageDriver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <Spinner
+                                android:id="@+id/spinnerMassageDriverType"
+                                android:layout_width="0dp"
+                                android:layout_height="44dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/spinner_background"
+                                android:popupBackground="@color/surface_elevated"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_heating"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="@color/on_surface_dim"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/card_background"
+                            android:paddingHorizontal="12dp">
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switchHeatingDriver"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <Spinner
+                                android:id="@+id/spinnerHeatingDriverLevel"
+                                android:layout_width="0dp"
+                                android:layout_height="44dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/spinner_background"
+                                android:popupBackground="@color/surface_elevated"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/divider"
+                        android:layout_marginHorizontal="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_passenger"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="12dp"
+                            android:textColor="@color/cosmic_purple"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_massage"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="@color/on_surface_dim"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginBottom="12dp"
+                            android:background="@drawable/card_background"
+                            android:paddingHorizontal="12dp">
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switchMassagePassenger"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <Spinner
+                                android:id="@+id/spinnerMassagePassengerType"
+                                android:layout_width="0dp"
+                                android:layout_height="44dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/spinner_background"
+                                android:popupBackground="@color/surface_elevated"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_heating"
+                            android:textSize="12sp"
+                            android:layout_marginBottom="6dp"
+                            android:textColor="@color/on_surface_dim"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/card_background"
+                            android:paddingHorizontal="12dp">
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switchHeatingPassenger"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <Spinner
+                                android:id="@+id/spinnerHeatingPassengerLevel"
+                                android:layout_width="0dp"
+                                android:layout_height="44dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/spinner_background"
+                                android:popupBackground="@color/surface_elevated"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    style="@style/CardSection"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/ic_section_mirrors"
+                            android:tint="@color/icon_tint"
+                            android:contentDescription="@null"/>
+
+                        <TextView
+                            style="@style/SectionTitle.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="@string/section_mirrors"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/toggleMirrors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true"
+                        app:selectionRequired="false">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMirrorFold"
+                            style="@style/ToggleButton.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_weight="1"
+                            android:text="@string/btn_mirror_fold"
+                            app:strokeColor="@color/divider"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMirrorUnfold"
+                            style="@style/ToggleButton.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_weight="1"
+                            android:text="@string/btn_mirror_unfold"
+                            app:strokeColor="@color/divider"/>
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CardSection"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/ic_section_ambient"
+                            android:tint="@color/cosmic_purple"
+                            android:contentDescription="@null"/>
+
+                        <TextView
+                            style="@style/SectionTitle.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="0dp"
+                            android:text="@string/section_ambient"/>
+
+                        <Switch
+                            android:id="@+id/switchAmbientLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ambient_brightness"
+                            android:textSize="14sp"
+                            android:textColor="@color/on_surface"/>
+
+                        <SeekBar
+                            android:id="@+id/seekBarAmbientBrightness"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="12dp"
+                            android:max="100"
+                            android:progress="50"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/card_background"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/section_color_music"
+                            android:textSize="14sp"
+                            android:textColor="@color/on_surface"/>
+
+                        <Switch
+                            android:id="@+id/switchColorMusic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/CardSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_section_drive"
+                        android:tint="@color/primary"
+                        android:contentDescription="@null"/>
+
+                    <TextView
+                        style="@style/SectionTitle.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/section_drive_mode"/>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toggleDriveMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    app:selectionRequired="true">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDriveModeRangeExt"
+                        style="@style/ToggleButton.Large"
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:text="@string/drive_mode_range_ext"
+                        app:strokeColor="@color/divider"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDriveModeSport"
+                        style="@style/ToggleButton.Large"
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:text="@string/drive_mode_sport"
+                        app:strokeColor="@color/divider"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDriveModeElectric"
+                        style="@style/ToggleButton.Large"
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:text="@string/drive_mode_ev"
+                        app:strokeColor="@color/divider"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDriveModeIntelligent"
+                        style="@style/ToggleButton.Large"
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:text="@string/drive_mode_intelligent"
+                        app:strokeColor="@color/divider"/>
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    style="@style/CardSection"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/ic_section_lights"
+                            android:tint="@color/icon_tint"
+                            android:contentDescription="@null"/>
+
+                        <TextView
+                            style="@style/SectionTitle.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="@string/section_lights"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/toggleLights"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        app:singleSelection="true"
+                        app:selectionRequired="true">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnLightsOff"
+                            style="@style/ToggleButton.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_weight="1"
+                            android:text="@string/lights_off"
+                            app:strokeColor="@color/divider"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnLightsParking"
+                            style="@style/ToggleButton.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_weight="1"
+                            android:text="@string/lights_parking"
+                            app:strokeColor="@color/divider"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnLightsHeadlights"
+                            style="@style/ToggleButton.Large"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_weight="1"
+                            android:text="@string/lights_headlights"
+                            app:strokeColor="@color/divider"/>
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="56dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/card_background"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginEnd="6dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/lbl_fog_lights"
+                                android:textSize="14sp"
+                                android:textColor="@color/on_surface"/>
+
+                            <Switch
+                                android:id="@+id/switchFogLights"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="56dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/card_background"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginHorizontal="6dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/lbl_hud"
+                                android:textSize="14sp"
+                                android:textColor="@color/on_surface"/>
+
+                            <Switch
+                                android:id="@+id/switchHud"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="56dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/card_background"
+                            android:paddingHorizontal="16dp"
+                            android:layout_marginStart="6dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/lbl_wireless_charging"
+                                android:textSize="14sp"
+                                android:textColor="@color/on_surface"/>
+
+                            <Switch
+                                android:id="@+id/switchWirelessCharging"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/CardSection"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:src="@drawable/ic_section_sound"
+                            android:tint="@color/icon_tint"
+                            android:contentDescription="@null"/>
+
+                        <TextView
+                            style="@style/SectionTitle.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="@string/section_sound_position"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/toggleSoundPosition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical"
+                        app:singleSelection="true"
+                        app:selectionRequired="true">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSoundAll"
+                            style="@style/ToggleButton.Compact"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:text="@string/sound_pos_all"
+                            app:strokeColor="@color/divider"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSoundDriver"
+                            style="@style/ToggleButton.Compact"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:text="@string/sound_pos_driver"
+                            app:strokeColor="@color/divider"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSoundFront"
+                            style="@style/ToggleButton.Compact"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:text="@string/sound_pos_front"
+                            app:strokeColor="@color/divider"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSoundSurround"
+                            style="@style/ToggleButton.Compact"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:text="@string/sound_pos_surround"
+                            app:strokeColor="@color/divider"/>
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
