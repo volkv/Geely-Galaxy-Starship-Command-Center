@@ -10,12 +10,10 @@ GGSCC (Geely Galaxy Starship Command Center) - Android application for controlli
 
 ## Build Commands
 
-```bash
-# Build release APK
-./gradlew assemblePrivilegedRelease
-# Output: app/build/outputs/apk/privileged/release/app-privileged-release.apk
+**ВАЖНО для Claude**: Всегда используй `./deploy.sh` для сборки и деплоя. Не выполняй gradle/adb команды вручную.
 
-# Quick update (app already installed)
+```bash
+# Quick update (app already installed) - builds and deploys automatically
 ./deploy.sh
 
 # Full reinstall (first time or reset)

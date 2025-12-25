@@ -155,14 +155,10 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="NavigationTab" parent="Widget.MaterialComponents.Button.TextButton">
-        <item name="android:minHeight">56dp</item>
-        <item name="android:textSize">15sp</item>
+    <style name="NavigationTab" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">@color/on_surface_medium</item>
-        <item name="rippleColor">@color/ripple</item>
-        <item name="android:paddingStart">20dp</item>
-        <item name="android:paddingEnd">20dp</item>
+        <item name="textAllCaps">false</item>
     </style>
 
     <style name="NavigationTab.Selected">

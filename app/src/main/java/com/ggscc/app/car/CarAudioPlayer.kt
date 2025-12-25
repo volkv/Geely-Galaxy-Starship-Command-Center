@@ -76,10 +76,13 @@ class CarAudioPlayer(private val context: Context) {
 
                 audioTrack?.play()
                 isPlaying = true
+                Log.i(TAG, "AudioTrack state after play(): ${audioTrack?.playState}, bufferSize=${audioTrack?.bufferSizeInFrames}")
 
                 val bufferInfo = MediaCodec.BufferInfo()
                 var sawInputEOS = false
                 var sawOutputEOS = false
+                val bytesPerFrame = 2 * channelCount
+                var totalFramesWritten = 0
 
                 while (!sawOutputEOS && isPlaying) {
                     if (!sawInputEOS) {
@@ -111,7 +114,11 @@ class CarAudioPlayer(private val context: Context) {
                                 applyGain(pcmData, gainPercent)
                             }
 
-                            audioTrack?.write(pcmData, 0, pcmData.size)
+                            val written = audioTrack?.write(pcmData, 0, pcmData.size) ?: 0
+                            if (totalFramesWritten == 0) {
+                                Log.i(TAG, "First write: ${pcmData.size} bytes, written=$written")
+                            }
+                            totalFramesWritten += pcmData.size / bytesPerFrame
                         }
                         codec.releaseOutputBuffer(outputBufferIndex, false)
 
@@ -119,6 +126,25 @@ class CarAudioPlayer(private val context: Context) {
                             sawOutputEOS = true
                         }
                     }
+                }
+
+                audioTrack?.let { track ->
+                    val bufferFrames = track.bufferSizeInFrames
+                    if (totalFramesWritten < bufferFrames) {
+                        val paddingFrames = bufferFrames - totalFramesWritten + 100
+                        val paddingBytes = paddingFrames * bytesPerFrame
+                        val silence = ByteArray(paddingBytes)
+                        track.write(silence, 0, silence.size)
+                        Log.i(TAG, "Added $paddingFrames frames of silence")
+                    }
+
+                    Log.i(TAG, "Waiting: frames=$totalFramesWritten, rate=$sampleRate")
+                    var waitCount = 0
+                    while (isPlaying && track.playbackHeadPosition < totalFramesWritten && waitCount < 100) {
+                        Thread.sleep(50)
+                        waitCount++
+                    }
+                    Log.i(TAG, "Done: pos=${track.playbackHeadPosition}, total=$totalFramesWritten, waits=$waitCount")
                 }
 
             } catch (e: Exception) {

@@ -48,15 +48,13 @@ class WheelButtonHandler(
 
                     when (buttonName) {
                         "LEFT" -> {
-                            if (isPressed) sendMediaKeyPair(KeyEvent.KEYCODE_MEDIA_PREVIOUS)
+                            if (isPressed) Log.i(TAG, "LEFT pressed - ignoring (handled by MusicClient)")
                         }
                         "RIGHT" -> {
-                            if (isPressed) sendMediaKeyPair(KeyEvent.KEYCODE_MEDIA_NEXT)
+                            if (isPressed) Log.i(TAG, "RIGHT pressed - ignoring (handled by MusicClient)")
                         }
                         "CONFIRM" -> {
-                            // Explicitly disabled to prevent double-event issue (handled by System/MusicClient)
-                            // if (isPressed) sendMediaKeyPair(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE)
-                            if (isPressed) Log.i(TAG, "CONFIRM pressed - ignoring in WheelButtonHandler")
+                            if (isPressed) Log.i(TAG, "CONFIRM pressed - ignoring (handled by MusicClient)")
                         }
                     }
                 }
@@ -149,6 +147,7 @@ class WheelButtonHandler(
         val upEvent = KeyEvent(downTime, downTime + 10, KeyEvent.ACTION_UP, keyCode, 0)
 
         try {
+            Log.i(TAG, "Dispatching media key pair: keyCode=$keyCode")
             audioManager.dispatchMediaKeyEvent(downEvent)
             audioManager.dispatchMediaKeyEvent(upEvent)
         } catch (e: Exception) {
