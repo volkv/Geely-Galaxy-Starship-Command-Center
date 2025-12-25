@@ -20,6 +20,11 @@ object PropertyConstants {
         const val CHARGING_POWER = 559969168
         const val CHARGING_TIME = 559968947
         const val CHARGING_PLUG_STATE = 557871791
+        const val CHARGING_SPEED = 559968948
+        const val CHARGING_ENERGY = 559968949
+        const val CHARGING_DC_POWER = 559969158
+        const val DISCHARGING_POWER = 559969171
+        const val CHARGING_STATE = 557872045
         const val ENERGY_DRIVING = 559969560
         const val ENERGY_CLIMATE = 559969561
         const val ENERGY_BATTERY = 559969562

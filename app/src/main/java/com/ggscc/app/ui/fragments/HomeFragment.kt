@@ -105,9 +105,9 @@ class HomeFragment : Fragment() {
         val isCharging = info.chargingPower != null && info.chargingPower > 0
         binding.cardCharging.visibility = if (isCharging) View.VISIBLE else View.GONE
         if (isCharging) {
-            binding.textChargingPower.text = info.chargingPower?.let {
-                String.format(Locale.US, "%.1f kW", it)
-            } ?: "--"
+            val powerStr = info.chargingPower?.let { String.format(Locale.US, "%.1f kW", it) } ?: "--"
+            val speedStr = info.chargingSpeed?.let { String.format(Locale.US, "+%.0f km/h", it) } ?: ""
+            binding.textChargingPower.text = if (speedStr.isNotEmpty()) "$powerStr, $speedStr" else powerStr
             binding.textChargingTime.text = info.chargingTimeMinutes?.let {
                 val hours = (it / 60).toInt()
                 val mins = (it % 60).toInt()
